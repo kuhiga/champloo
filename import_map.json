@@ -1,5 +1,3 @@
 {
-  "imports": {
-    "@champloo/libs-supa-andagi": "./libs/supa-andagi/mod.ts"
-  }
+  "imports": {}
 }
