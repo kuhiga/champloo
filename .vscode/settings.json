@@ -1,8 +1,6 @@
 {
-  "deno.enablePaths": ["apps/andagi-server"],
+  "deno.enablePaths": ["apps/andagi-server", "libs/supa-andagi"],
   "deno.unstable": true,
   "deno.importMap": "./import_map.json",
-  "cSpell.words": [
-    "andagi"
-  ]
+  "cSpell.words": ["andagi"]
 }

@@ -1,0 +1,24 @@
+{
+  "name": "libs-supa-andagi",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/supa-andagi",
+  "projectType": "library",
+  "targets": {
+    "test": {
+      "executor": "@nx/deno:test",
+      "outputs": ["{workspaceRoot}/coverage/libs/supa-andagi"],
+      "options": {
+        "coverageDirectory": "coverage/libs/supa-andagi",
+        "denoConfig": "libs/supa-andagi/deno.json",
+        "check": "local"
+      }
+    },
+    "lint": {
+      "executor": "@nx/deno:lint",
+      "options": {
+        "denoConfig": "libs/supa-andagi/deno.json"
+      }
+    }
+  },
+  "tags": []
+}
