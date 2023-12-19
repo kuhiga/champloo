@@ -60,5 +60,6 @@
       }
     }
   },
-  "nxCloudAccessToken": "ODAzN2Y4NTQtNzEzMS00MmZjLTg5OWYtOTM5MmI2YzYxZmFmfHJlYWQtd3JpdGU="
+  "nxCloudAccessToken": "ODAzN2Y4NTQtNzEzMS00MmZjLTg5OWYtOTM5MmI2YzYxZmFmfHJlYWQtd3JpdGU=",
+  "plugins": ["@nx/deno"]
 }

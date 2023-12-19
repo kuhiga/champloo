@@ -2,7 +2,6 @@
   "name": "@champloo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
   "private": true,
   "dependencies": {
     "@nx/next": "17.2.6",
@@ -14,6 +13,7 @@
     "tslib": "^2.3.0"
   },
   "devDependencies": {
+    "@nx/deno": "^17.0.0",
     "@nx/devkit": "17.2.6",
     "@nx/eslint": "17.2.6",
     "@nx/eslint-plugin": "17.2.6",
