@@ -1,0 +1,39 @@
+{
+  "name": "example-2",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/example-2/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/deno:esbuild",
+      "outputs": ["{workspaceRoot}/dist/apps/example-2"],
+      "options": {
+        "main": "apps/example-2/src/main.ts",
+        "outputFile": "dist/apps/example-2/main.js",
+        "denoConfig": "apps/example-2/deno.json"
+      }
+    },
+    "serve": {
+      "executor": "@nx/deno:run",
+      "options": {
+        "buildTarget": "example-2:build",
+        "watch": true
+      }
+    },
+    "test": {
+      "executor": "@nx/deno:test",
+      "outputs": ["{options.coverageDirectory}"],
+      "options": {
+        "coverageDirectory": "coverage/apps/example-2",
+        "denoConfig": "apps/example-2/deno.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/deno:lint",
+      "options": {
+        "denoConfig": "apps/example-2/deno.json"
+      }
+    }
+  },
+  "tags": []
+}

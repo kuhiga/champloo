@@ -1,8 +1,13 @@
 {
   "deno.enablePaths": [
     "apps/andagi-server",
+    "libs/andagi-db",
+    "apps/andagi-web-svc",
+    "apps/example",
+    "apps/example-2"
   ],
-  "deno.unstable": true,
   "deno.importMap": "./import_map.json",
-  "cSpell.words": ["andagi"]
+  "cSpell.words": ["andagi"],
+  "deno.enable": true,
+  "deno.unstable": true
 }
