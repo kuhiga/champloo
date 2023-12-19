@@ -44,7 +44,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@swc/plugin-styled-components", "npm:1.5.105"],\
             ["@testing-library/react", "virtual:8eacea571ca7b52f8a33bb436fbc4f5c56515ff036d8d80df8aca9ef9fde0f6b7e9f054a488b8233d010fe94bd0dad3d171dec1d8cd1e8dc45cb1210c4e44aeb#npm:14.0.0"],\
             ["@types/jest", "npm:29.5.11"],\
-            ["@types/node", "npm:18.16.9"],\
+            ["@types/node", "npm:20.10.5"],\
             ["@types/react", "npm:18.2.33"],\
             ["@types/react-dom", "npm:18.2.14"],\
             ["@types/react-is", "npm:18.2.2"],\
@@ -3176,7 +3176,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@swc/plugin-styled-components", "npm:1.5.105"],\
             ["@testing-library/react", "virtual:8eacea571ca7b52f8a33bb436fbc4f5c56515ff036d8d80df8aca9ef9fde0f6b7e9f054a488b8233d010fe94bd0dad3d171dec1d8cd1e8dc45cb1210c4e44aeb#npm:14.0.0"],\
             ["@types/jest", "npm:29.5.11"],\
-            ["@types/node", "npm:18.16.9"],\
+            ["@types/node", "npm:20.10.5"],\
             ["@types/react", "npm:18.2.33"],\
             ["@types/react-dom", "npm:18.2.14"],\
             ["@types/react-is", "npm:18.2.2"],\
@@ -5352,13 +5352,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@types/node", [\
-        ["npm:18.16.9", {\
-          "packageLocation": "./.yarn/cache/@types-node-npm-18.16.9-b8c97d3012-7fe0ef372b.zip/node_modules/@types/node/",\
-          "packageDependencies": [\
-            ["@types/node", "npm:18.16.9"]\
-          ],\
-          "linkType": "HARD"\
-        }],\
         ["npm:20.10.5", {\
           "packageLocation": "./.yarn/cache/@types-node-npm-20.10.5-9464a4540b-e216b679f5.zip/node_modules/@types/node/",\
           "packageDependencies": [\
@@ -13696,7 +13689,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@tsconfig/node12", "npm:1.0.11"],\
             ["@tsconfig/node14", "npm:1.0.3"],\
             ["@tsconfig/node16", "npm:1.0.4"],\
-            ["@types/node", "npm:18.16.9"],\
+            ["@types/node", "npm:20.10.5"],\
             ["@types/swc__core", null],\
             ["@types/swc__wasm", null],\
             ["@types/typescript", null],\
