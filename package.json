@@ -5,7 +5,7 @@
   "private": true,
   "dependencies": {
     "@nx/next": "17.2.6",
-    "next": "13.4.4",
+    "next": "14.0.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-is": "18.2.0",
@@ -38,6 +38,7 @@
     "autoprefixer": "^10.4.16",
     "babel-jest": "^29.4.1",
     "babel-plugin-styled-components": "1.10.7",
+    "daisyui": "^4.4.20",
     "eslint": "~8.48.0",
     "eslint-config-next": "13.4.4",
     "eslint-config-prettier": "^9.0.0",

@@ -11,6 +11,24 @@ router.get('/api', (ctx) => {
   ctx.response.type = 'text/json';
 });
 
+router.post('/login', async (ctx) => {
+  const body = ctx.request.body();
+
+  const loginData = await body.value;
+  // const res = await validateLogin(loginData);
+  const res = 'hello';
+  //return jwt token
+  ctx.response.body = { res };
+});
+
+router.post('/signup', async (ctx) => {
+  const body = ctx.request.body();
+  const loginData = await body.value;
+  // const res = await validateLogin(loginData);
+  const res = 'hello';
+  ctx.response.body = { res };
+});
+
 const app = new Application();
 
 app.addEventListener('listen', ({ hostname, port, secure }) => {
