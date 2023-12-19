@@ -1,4 +1,4 @@
-name: Deno Deploy andagi-server
+name: Deploy andagi-server
 
 on:
   workflow_dispatch:
@@ -17,5 +17,5 @@ jobs:
       - name: Deploy to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: andagi-server # the name of the project on Deno Deploy
+          project: andagi # the name of the project on Deno Deploy
           entrypoint: apps/andagi-server/src/main.ts # the entrypoint to deploy
