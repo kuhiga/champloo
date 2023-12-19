@@ -5,12 +5,7 @@
   // language - current active spelling language
   "language": "en",
   // words - list of words to be always considered correct
-  "words": [
-    "andagi",
-    "Deno",
-    "denoland",
-    "deployctl",
-  ],
+  "words": ["andagi", "Deno", "denoland", "deployctl"],
   "ignorePaths": [
     ".vscode/*",
     ".husky/*",
@@ -24,7 +19,5 @@
   // flagWords - list of words to be always considered incorrect
   // This is useful for offensive words and common spelling errors.
   // For example "hte" should be "the"
-  "flagWords": [
-    "hte"
-  ]
+  "flagWords": ["hte"]
 }

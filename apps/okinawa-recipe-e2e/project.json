@@ -1,13 +1,13 @@
 {
-  "name": "andagi-client-e2e",
+  "name": "okinawa-recipe-e2e",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/andagi-client-e2e/src",
+  "sourceRoot": "apps/okinawa-recipe-e2e/src",
   "targets": {
     "e2e": {
       "executor": "@nx/playwright:playwright",
-      "outputs": ["{workspaceRoot}/dist/.playwright/apps/andagi-client-e2e"],
+      "outputs": ["{workspaceRoot}/dist/.playwright/apps/okinawa-recipe-e2e"],
       "options": {
-        "config": "apps/andagi-client-e2e/playwright.config.ts"
+        "config": "apps/okinawa-recipe-e2e/playwright.config.ts"
       }
     },
     "lint": {
@@ -15,5 +15,5 @@
       "outputs": ["{options.outputFile}"]
     }
   },
-  "implicitDependencies": ["andagi-client"]
+  "implicitDependencies": ["okinawa-recipe"]
 }
