@@ -12,7 +12,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" data-theme="retro">
-      <body>{children}</body>
+      <body>
+        {/* <link rel="stylesheet" href="https://rsms.me/inter/inter.css" /> */}
+        {children}
+      </body>
     </html>
   );
 }

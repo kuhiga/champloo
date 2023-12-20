@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @layer base {
-  body {
-    @apply bg-white;
-  }
-} */
 html {
   background-color: white;
   height: 100%;
