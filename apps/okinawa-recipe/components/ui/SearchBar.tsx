@@ -5,7 +5,7 @@ export default function SearchBar() {
         htmlFor="search"
         className="block text-sm font-medium leading-6 text-gray-900"
       >
-        Search recipes
+        Browse recipes
       </label>
       <div className="relative mt-2 flex items-center">
         <input
