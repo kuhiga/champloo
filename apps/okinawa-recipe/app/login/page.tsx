@@ -9,22 +9,31 @@ type FormData = {
   password: string;
 };
 /* eslint-disable @next/next/no-img-element */
-export default function SignIn() {
+export default function Login() {
   const supabase = createClientComponentClient();
   const router = useRouter();
+  const [isLoggingIn, setIsLoggingIn] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     email: '',
     password: '',
   });
   const handleSignIn = async () => {
     if (formData.email !== '' && formData.password !== '') {
-      const { error } = await supabase.auth.signInWithPassword({
-        email: formData.email,
-        password: formData.password,
-      });
-      if (error) throw new Error(`Error signing in ${error}`);
-      router.refresh();
-      setFormData({ email: '', password: '' });
+      try {
+        setIsLoggingIn(true);
+        const { error, data } = await supabase.auth.signInWithPassword({
+          email: formData.email,
+          password: formData.password,
+        });
+        if (error) throw new Error(`Error signing in ${error}`);
+        router.refresh();
+        setFormData({ email: '', password: '' });
+        router.push('/');
+      } catch (e) {
+        throw new Error(`Failed to sign in ${e}`);
+      } finally {
+        setIsLoggingIn(false);
+      }
     }
   };
   return (
@@ -54,7 +63,7 @@ export default function SignIn() {
                 id="email"
                 name="email"
                 type="email"
-                autoComplete="email"
+                // autoComplete="email"
                 required
                 onChange={(e) =>
                   setFormData({ ...formData, email: e.target.value })
@@ -86,7 +95,7 @@ export default function SignIn() {
                 id="password"
                 name="password"
                 type="password"
-                autoComplete="current-password"
+                // autoComplete="current-password"
                 required
                 onChange={(e) =>
                   setFormData({ ...formData, password: e.target.value })
@@ -98,9 +107,10 @@ export default function SignIn() {
 
           <div>
             <button
-              type="submit"
+              type="button"
               className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               onClick={handleSignIn}
+              disabled={isLoggingIn}
             >
               Sign in
             </button>
